@@ -447,6 +447,20 @@
     <footer>
         <p>&copy; 2026 Victor Global Ventures. All Rights Reserved.</p>
     </footer>
+<script>
+window.onload = function () {
 
+const voice = new SpeechSynthesisUtterance(
+"Welcome to Victor Global Ventures. We are delighted to have you here. Explore our creative services and let's build something amazing together."
+);
+
+voice.lang = "en-US";
+voice.rate = 0.9;
+voice.pitch = 1.1;
+
+speechSynthesis.speak(voice);
+
+}
+</script>
 </body>
 </html>
